@@ -4,7 +4,7 @@ Laboratórios e estudos realizados durante meu aprendizado de administração de
 
 ## Objetivo
 
-Este repositório documenta minha evolução em Linux e administração de sistemas, com comandos, configurações e práticas feitas  em ambiente de laboratório.
+Este repositório documenta minha evolução em Linux e administração de sistemas, com comandos, configurações e práticas feitas   em ambiente de laboratório.
 
 ## Tópicos
 
