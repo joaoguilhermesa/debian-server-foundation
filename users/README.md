@@ -28,6 +28,7 @@ sudo deleuser joao
 ```
 Objetivos
 Aprender criacao de usuarios, grupos e permissoes basicas na distro Debian
+
 Aprendi
 -diferenca entre usuarios comum e root
 -manipular roles de usuarios comums e root
