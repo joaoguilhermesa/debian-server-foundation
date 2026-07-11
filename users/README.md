@@ -1,6 +1,7 @@
 ## gerenciammaneto de users
 Comandos estudados
-```bash
+## adicona ususario
+```bash 
 sudo adduser joao
 ```
 ## da permissao de admin para o user
