@@ -1,9 +1,9 @@
 #user management
 
-## cenario
+## Cenario
 novo usuario chamado **joao** ingressou no sistema e precisa de uma conta no servidor debian para acessar
 
-## objetivo
+## Objetivo
 Criar um usuario;
 Conceder privilegios administrativos ao novo usuario;
 Comfirmar que o usuario pertence ao grupo "sudo".
@@ -11,7 +11,7 @@ Comfirmar que o usuario pertence ao grupo "sudo".
 ## Ambiente
 PC Debian 13 i3wm
 Usuario: root
-## criar usuario
+## Criar usuario
 
 ```bash
 sudo adduser joao
@@ -24,24 +24,27 @@ sudo adduser joao
 ```bash
 sudo usermod -aG sudo joao
 ```
+## Resultado
+![Permissao concedida ao usuario](Images/02-user-sudo.png)
+
 ## Verificar usuario
 
 ```bash
 id joao
 ```
 
-Resultado;
-![Informacoes do usuario](Images/02-id-user.png)
+## Resultado
+![Informacoes do usuario](Images/03-id-user.png)
 
-## Verificando grupos
+## Verificando grupos 
 
 ```bash
 groups joao
 ```
 
-Resultado;
+## Resultado
 
-![Grupos](Images/03-groups.png)
+![Grupos](Images/04-groups.png)
 
 ## O que aprendi
 Criar usuario;
