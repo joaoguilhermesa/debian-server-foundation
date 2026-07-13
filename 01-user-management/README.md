@@ -4,23 +4,23 @@
 ## Scenario
 New user named **joao** needs acess to a Debian server. The objective is to create the account, grant administrative priviligies and verify the config.
 
-## Objetivo
+## Objective
 - Criar um usuario;
 - Conceder privilegios administrativos ao novo usuario;
 - Comfirmar que o usuario pertence ao grupo "sudo".
 
-## Ambiente
+## Environment
 - S.O: Debian 13 
 - Window Manager: i3wm
 - Usuario: debian
-## Criar usuario
+## Create user
 
 ```bash
 sudo adduser joao
 ```
 Create a new user named **joao** and asks for configurations of password and additional information.
 
-## Resultado
+## Result
 ![Criacao do usuario](Images/01-add-user.png)
 
 ## Adicionar o novo usuario ao grupo sudo
@@ -28,27 +28,27 @@ Create a new user named **joao** and asks for configurations of password and add
 ```bash
 sudo usermod -aG sudo joao
 ```
-Adds the user **joao** to the group 'sudoers' allowing to execute administratie commands
+Adds the user **joao** to the group 'sudo' allowing to execute administratie commands
 
-## Resultado
+## Result
 ![Permissao concedida ao usuario](Images/02-user-sudo.png)
 
-## Verificar usuario
+## Verify user
 
 ```bash
 id joao
 ```
 
-## Resultado
+## Result
 ![Informacoes do usuario](Images/03-id-user.png)
 
-## Verificando grupos 
+## Verify groups 
 
 ```bash
 groups joao
 ```
 
-## Resultado
+## Results
 
 ![Grupos](Images/04-groups.png)
 
@@ -58,7 +58,11 @@ groups joao
 - Verificar UID  e GID;
 - Confirmar grupos do usuarios;
 
-## Referencias
+## Conclusion
+This lab demosntrated the basic process of creating users, assigning administrative priviligies and verifying account information on Debian
+
+
+## Reference
 https://manpages.debian.org
 https://wiki.debian.org/
 https://www.gnu.org/software/coreutils
