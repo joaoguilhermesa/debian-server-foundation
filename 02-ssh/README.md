@@ -22,7 +22,7 @@ sudo apt install openssh-server -y
 sudo systemctl status ssh
 ```
 Verifica se o servico esta em execucao
-![Status do servico](Images/01-status-ssh.png)
+![Status do servico](Images/01-ssh-status.png)
 ## Iniciar o servico
 ```bash
 sudo systemctl start ssh
