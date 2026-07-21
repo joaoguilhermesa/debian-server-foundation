@@ -1,56 +1,59 @@
 # SSH (secure shell)
 
-## objetivo
+## Cenario
+Computador precisa verificar a estabilidade do servico do ssh e fazer um conexao com um dominio
 
-Aprender instalar, configurar e utilizar o servico SSH para administracao remota de servidores Debian.
+## Objetivo
+Aprender a instalar, configurar e utilizar o servico SSH para administracao remota de servidores Debian.
 
-## instalar OpenSSH server
+
+## Ambiente
+PC Debian 13 i3wm
+Usuario: debian
+
+## Instalar OpenSSH server
 ```bash
 sudo apt update
 sudo apt install openssh-server -y
 ```
-instala servidor SSH
-
-## verificar o status do servico
+## Verificar o status do servico
 
 ```bash
 sudo systemctl status ssh
 ```
-verifica se o servico esta em execucao
-
+Verifica se o servico esta em execucao
+![Status do servico](Images/01-status-ssh.png)
 ## Iniciar o servico
 ```bash
 sudo systemctl start ssh
 ```
-
 ## Habilitar na inicializacao
 ```bash
 sudo systemctl enable ssh
 ```
-## reiniciar o servico
+## Reiniciar o servico
 ```bash
 sudo sysmtectl restart ssh
 ```
-## conectar a outro computador
+## Conectar a outro computador
 ```bash
 ssh usuario@12.168.1.100
 ```
-## arquivo de configuracao
+## Arquivo de configuracao
 ```text
 /etc/ssh/sshd_config
 ```
-Apos alterar esse arquivo
-
+## Reiniciar o SSH apos alteracao no arquivo de config
 ```bash
 sudo systemctl restart ssh
 ```
 
-## verificar se a porta 22 esta aberta
+## Verificar se a porta 22 esta aberta
 ```bash
 sudo ss -tlnp | grep ssh
 ```
-
-## o que aprendi
+![Porta-22](Images/03-ss22.png)
+## O que aprendi
 
 -instalar openssh server
 -gerenciar o servico com systemd
