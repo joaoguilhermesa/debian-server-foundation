@@ -1,17 +1,17 @@
 >Laboratório prático desenvolvido durante meus estudos de administração Linux.
-# Gereciamento de Usuários
+# Gerenciamento de Usuários
 
 ## Cenário
-Novo usuário chamado **joao** precisa de acesso a um servidor Debian. O objetivo é criar uma conta, garantir privilégios administrativos e verificar a configurações de identificação.
+Novo usuário chamado **joao** precisa de acesso a um servidor Debian. O objetivo é criar uma conta, garantir privilégios administrativos e verificar as configurações de identificação.
 
 ## Objetivo
-- Criar um usuario no sistema;
-- Conceder privilegios administrativos ao novo usuario;
-- Comfirmar o UID, GID e os grupos associados ao usuário.
+- Criar um usuário no sistema;
+- Conceder privilégios administrativos ao novo usuario;
+- Confirmar o UID, GID e os grupos associados ao usuário.
 
 ## Ambiente
 - S.O: Debian 13
-- Usuario: debian
+- Usuário: debian
 ## Criar usuário
 
 ```bash
@@ -22,7 +22,7 @@ Cria um novo usuário chamado **joao** e pede por configuração de senha.
 ## Resultado
 ![Criacao do usuario](Images/01-add-user.png)
 
-## Adicionar o novo usuario ao grupo sudo
+## Adicionar o novo usuário ao grupo sudo. 
 
 ```bash
 sudo usermod -aG sudo joao
@@ -52,13 +52,13 @@ groups joao
 ![Grupos](Images/04-groups.png)
 
 ## O que aprendi
-- Criar usuario;
-- Adicionar usuario ao grupo sudoers;
+- Criar usuário;
+- Adicionar usuário ao grupo sudoers;
 - Verificar UID  e GID;
-- Confirmar grupos do usuarios;
+- Confirmar grupos do usuários;
 
 ## Conclusão
-Este laborátorio é demonstrado o básico de criação de usuários, atribuição de privilégios administrativos e verificação da conta criada
+Neste laboratório foi demonstrado o básico de criação de usuários, atribuição de privilégios administrativos e verificação da conta criada
 
 
 ## Referências
