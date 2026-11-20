@@ -1,26 +1,25 @@
 >Laboratorio pratico desenvolvido durante meus estudos de administracao Linux
-# User Management
+# Gereciamento de Usuários
 
-## Scenario
-New user named **joao** needs acess to a Debian server. The objective is to create the account, grant administrative priviligies and verify the config.
+## Cenário
+Novo usuário nomeado **joao** precisa de acesso a um servidor Debian. O objetivo é criar uma conta, Garantir privilégios administrativos e verificar a configurações.
 
-## Objective
+## Objetivo
 - Criar um usuario;
 - Conceder privilegios administrativos ao novo usuario;
 - Comfirmar que o usuario pertence ao grupo "sudo".
 
 ## Environment
-- S.O: Debian 13 
-- Window Manager: i3wm
+- S.O: Debian 13
 - Usuario: debian
-## Create user
+## Criar usuário
 
 ```bash
 sudo adduser joao
 ```
-Create a new user named **joao** and asks for configurations of password and additional information.
+Cria um novo usuário chamado **joao** e pede por configuração de senha.
 
-## Result
+## Resultado
 ![Criacao do usuario](Images/01-add-user.png)
 
 ## Adicionar o novo usuario ao grupo sudo
@@ -28,27 +27,27 @@ Create a new user named **joao** and asks for configurations of password and add
 ```bash
 sudo usermod -aG sudo joao
 ```
-Adds the user **joao** to the group 'sudo' allowing to execute administratie commands
+Adiciona o usuário **joao** ao grupo 'sudo' permitindo a este usuário executar comandos administrativos.
 
-## Result
+## Resultado
 ![Permissao concedida ao usuario](Images/02-user-sudo.png)
 
-## Verify user
+## Verificar o usuário
 
 ```bash
 id joao
 ```
 
-## Result
+## Resultado
 ![Informacoes do usuario](Images/03-id-user.png)
 
-## Verify groups 
+## Verificar os grupos 
 
 ```bash
 groups joao
 ```
 
-## Results
+## Resultados
 
 ![Grupos](Images/04-groups.png)
 
@@ -58,11 +57,11 @@ groups joao
 - Verificar UID  e GID;
 - Confirmar grupos do usuarios;
 
-## Conclusion
-This lab demosntrated the basic process of creating users, assigning administrative priviligies and verifying account information on Debian
+## Conclusão
+Este laborátorio é demonstrado o básico de criação de usuários, atribuição de privilégios administrativos e verificação da conta criada
 
 
-## Reference
+## Referências
 https://manpages.debian.org
 https://wiki.debian.org/
 https://www.gnu.org/software/coreutils
