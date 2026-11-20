@@ -16,5 +16,3 @@ Este repositório documenta minha evolução em Linux e administração de siste
 - Gerenciamento de pacotes
 - Serviços
 - Bash
-
-## trabalhando
