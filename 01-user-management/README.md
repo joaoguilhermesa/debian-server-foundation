@@ -1,15 +1,15 @@
->Laboratorio pratico desenvolvido durante meus estudos de administracao Linux
+>Laboratório prático desenvolvido durante meus estudos de administração Linux.
 # Gereciamento de Usuários
 
 ## Cenário
-Novo usuário nomeado **joao** precisa de acesso a um servidor Debian. O objetivo é criar uma conta, Garantir privilégios administrativos e verificar a configurações.
+Novo usuário chamado **joao** precisa de acesso a um servidor Debian. O objetivo é criar uma conta, garantir privilégios administrativos e verificar a configurações de identificação.
 
 ## Objetivo
-- Criar um usuario;
+- Criar um usuario no sistema;
 - Conceder privilegios administrativos ao novo usuario;
-- Comfirmar que o usuario pertence ao grupo "sudo".
+- Comfirmar o UID, GID e os grupos associados ao usuário.
 
-## Environment
+## Ambiente
 - S.O: Debian 13
 - Usuario: debian
 ## Criar usuário
